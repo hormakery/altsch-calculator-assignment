@@ -28,7 +28,7 @@ body {
   
 }
 .input {
-  background-color: red;
+  background-color: rgb(0, 41, 71);
   height: 20vh;
 }
 .calculator input[type="text"] {
@@ -38,7 +38,7 @@ body {
   font-size: 28px;
   text-align: right;
   padding: 1px;
-  background-color: red;
+  background-color: rgb(0, 41, 71);
   border: none;
   color: white;
   outline: none;
