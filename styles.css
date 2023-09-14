@@ -1,11 +1,12 @@
 #equals-to {
+  background: #22b9c3;
 
-    background: #22b9c3;
-    
-    color: white;
-    
-    grid-row: span 2;
-    
-    height: 160px;
-    
-    }
+  color: white;
+
+  grid-row: span 2;
+
+  height: 160px;
+}
+#equals-to:focus {
+  background-color: white;
+}
