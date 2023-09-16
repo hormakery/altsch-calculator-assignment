@@ -14,6 +14,15 @@ buttons.forEach((item) => {
       display.innerText = "Empty!";
       setTimeout(() => (display.innerText = ""), 2000);
     } else {
+      const lastChar = display.innerText.toString().at(-1);
+
+      if (
+        (display.innerText == "" && isNaN(item.id)) ||
+        (isNaN(lastChar) && isNaN(item.id))
+      ) {
+        return;
+      }
+
       display.innerText += item.id;
     }
   };
