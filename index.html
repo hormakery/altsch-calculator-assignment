@@ -5,44 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AltSchool Calculator Assignment</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>AltSchool Calculator Assignment</h1>
-    <button id="mode-toggle">Dark Mode</button>
-    <div class="calculator-container">
-      <div class="calculator">
-        <div class="input" style="border-radius: 14px 14px 14px 14px">
-          <input type="text" id="inputBox" readonly="" />
+    <div class="container">
+      <div class="calculator dark">
+        <div class="theme-toggler active">
+          <span class="material-symbols-outlined toggler-icon">light_mode</span>
         </div>
-        <!-- <input type="text" id="outputBox"> -->
+        <div class="display-screen">
+          <div id="display"></div>
+        </div>
         <div class="buttons">
-          <button>c</button>
-          <button class="operator">/</button>
-          <button class="operator">*</button>
-          <button>DEL</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="operator">-</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button class="operator">+</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button class="operator">=</button>
-          <button style="border-radius: 0px 0px 0px 15px">%</button>
-          <button>0</button>
-          <button>.</button>
+          <table>
+            <tr>
+              <td><button class="btn-operator" id="clear">C</button></td>
+              <td><button class="btn-operator" id="/">&divide;</button></td>
+              <td><button class="btn-operator" id="*">&times;</button></td>
+              <td>
+                <button class="btn-operator" id="backspace">
+                  <i class="material-icons">&#xe14a;</i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="btn-number" id="7">7</button></td>
+              <td><button class="btn-number" id="8">8</button></td>
+              <td><button class="btn-number" id="9">9</button></td>
+              <td><button class="btn-operator" id="-">-</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn-number" id="4">4</button></td>
+              <td><button class="btn-number" id="5">5</button></td>
+              <td><button class="btn-number" id="6">6</button></td>
+              <td><button class="btn-operator" id="+">+</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn-number" id="1">1</button></td>
+              <td><button class="btn-number" id="2">2</button></td>
+              <td><button class="btn-number" id="3">3</button></td>
+              <td rowspan="2">
+                <button class="btn-equal" id="equal">=</button>
+              </td>
+            </tr>
+            <tr>
+              <td><button class="btn-operator" id="(">(</button></td>
+              <td><button class="btn-number" id="0">0</button></td>
+              <td><button class="btn-operator" id=")">)</button></td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
-  
 </html>
