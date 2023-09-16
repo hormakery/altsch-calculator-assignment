@@ -50,11 +50,11 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           break;
         //to set the value of the toggle button to null
-        case "Dark Mode":
+        case "Light Mode":
           input.value = null;
           break;
         //to clear the input box
-        case "c":
+        case "C":
           string = "";
           input.value = string;
           let output = document.querySelector("p");
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           break;
         //to delete the last character
-        case "DEL":
+        case "Del":
           string = string.slice(0, -1);
           input.value = string;
           break;
