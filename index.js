@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ToggleBtn = document.getElementById("mode-toggle");
   ToggleBtn.addEventListener("click", toggleDarkMode);
 
+
   //to get the value of the input box from local storage
   if (localStorage.getItem("string")) {
     string = localStorage.getItem("string");
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
 
         //to set the value of the toggle button to null
-        case "Dark Mode":
+        case "Light Mode":
           input.value = null;
           break;
 
@@ -64,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
 
         //to delete the last character
-        case "DEL":
+        case "Del":
           string = string.slice(0, -1);
           input.value = string;
           break;
